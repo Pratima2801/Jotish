@@ -1,17 +1,16 @@
-/* Reset */
-* {
-  box-sizing: border-box;
+html, body {
+  height: 100%;
 }
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: linear-gradient(135deg, #74ebd5 0%, #9face6 100%);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
   margin: 0;
   padding: 0;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  min-height: 100vh;
 }
 
 .login-wrapper {
@@ -19,6 +18,8 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
+  min-height: 100vh;
+  padding: 40px 16px;
 }
 
 .login-box {
@@ -96,4 +97,101 @@ body {
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(-10px); }
   to { opacity: 1; transform: translateY(0); }
+}
+
+.page-container {
+  max-width: 1100px;
+  margin: 36px auto;
+  padding: 0 16px;
+}
+
+.list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.controls {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.search-input {
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #e0e0e0;
+  width: 320px;
+  outline: none;
+}
+
+.search-input:focus {
+  border-color: #6a5acd;
+  box-shadow: 0 0 0 4px rgba(106,90,205,0.06);
+}
+
+.table-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  overflow-x: auto;
+}
+
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 900px;
+}
+
+.styled-table th,
+.styled-table td {
+  text-align: left;
+  padding: 10px 12px;
+  border-bottom: 1px solid #f1f1f1;
+  color: #333;
+}
+
+.styled-table thead th {
+  background: linear-gradient(90deg, rgba(106,90,205,0.1), rgba(106,90,205,0.04));
+  font-weight: 600;
+  color: #2e2e2e;
+}
+
+.styled-table tbody tr:hover {
+  background: #fbfbff;
+}
+
+.btn-primary-sm {
+  background: #6a5acd;
+  color: #fff;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.btn-primary-sm:hover {
+  background: #5941b1;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid rgba(106,90,205,0.25);
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #3b3b3b;
+}
+
+.center {
+  text-align: center;
+  padding: 22px;
+  color: #555;
+}
+
+.muted {
+  color: #777;
 }
