@@ -52,7 +52,7 @@ function ListPage() {
             value={q}
             onChange={(e) => setQ(e.target.value)}
           />
-          <button className="btn-outline" onClick={() => { navigate('/login'); }}>
+          <button className="btn-warm" onClick={() => { navigate('/login'); }}>
             Logout
           </button>
         </div>

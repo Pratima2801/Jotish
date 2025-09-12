@@ -195,3 +195,90 @@ body {
 .muted {
   color: #777;
 }
+
+.detail-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 18px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+
+.detail-row {
+  display: flex;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid #f6f6f8;
+}
+
+.detail-row:last-child {
+  border-bottom: none;
+}
+
+.detail-label {
+  width: 160px;
+  font-weight: 600;
+  color: #444;
+}
+
+.detail-value {
+  flex: 1;
+  color: #333;
+}
+
+.btn-cta {
+  background: linear-gradient(180deg, #6a5acd, #5941b1);
+  color: #fff;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 6px 16px rgba(106,90,205,0.18);
+  transition: transform 0.12s ease, box-shadow 0.12s ease, opacity 0.12s ease;
+}
+
+.btn-cta:hover { transform: translateY(-2px); box-shadow: 0 10px 24px rgba(89,65,177,0.18); }
+.btn-cta:active { transform: translateY(0); }
+
+.btn-cta-outline {
+  background: transparent;
+  color: #6a5acd;
+  border: 1px solid rgba(106,90,205,0.18);
+  padding: 9px 12px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.12s, color 0.12s, box-shadow 0.12s;
+}
+
+.btn-cta-outline:hover {
+  background: rgba(106,90,205,0.06);
+  box-shadow: 0 6px 16px rgba(106,90,205,0.06);
+}
+
+.btn-warm {
+  background: linear-gradient(180deg, #ffb86b, #ff9f3b);
+  color: #2b2b2b;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 10px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(255,184,107,0.18);
+}
+.btn-warm:hover { transform: translateY(-2px); }
+
+.camera-preview {
+  width: 100%;
+  border-radius: 8px;
+  background: #000;
+  overflow: hidden;
+}
+
+.camera-controls {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+  justify-content: center;
+}
+
