@@ -4,6 +4,8 @@ import LoginPage from './pages/LoginPage';
 import ListPage from './pages/ListPage';
 import DetailsPage from './pages/DetailsPage';
 import PhotoResultPage from './pages/PhotoResultPage';
+import GraphPage from './pages/GraphPage';
+import MapPage from './pages/MapPage';
 
 function App() {
   return (
@@ -12,6 +14,8 @@ function App() {
       <Route path="/list" element={<ListPage />} />
       <Route path="/details" element={<DetailsPage />} />
       <Route path="/photo" element={<PhotoResultPage />} />
+      <Route path="/graph" element={<GraphPage />} /> 
+      <Route path="/map" element={<MapPage />} />
       <Route path="*" element={<Navigate to="/login" replace />} />
     </Routes>
   );

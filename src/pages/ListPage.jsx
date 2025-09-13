@@ -52,6 +52,12 @@ function ListPage() {
             value={q}
             onChange={(e) => setQ(e.target.value)}
           />
+          <button className="btn-cta" onClick={() => navigate('/graph')}>
+            Salary Chart
+          </button>
+          <button className="btn-cta" onClick={() => navigate('/map')}>
+            City Map
+          </button>
           <button className="btn-warm" onClick={() => { navigate('/login'); }}>
             Logout
           </button>
